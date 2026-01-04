@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mico's Portfolio</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+  <div class="container d-flex justify-content-between align-items-center">
+
+    <!-- LEFT: Profile Icon + Name + Social Media -->
+    <div class="d-flex align-items-center">
+      <a class="navbar-brand d-flex align-items-center profile-box me-3" href="#home">
+        <img src="img/Profile.png" alt="Mico" class="profile-img">
+        <span class="profile-name ms-2">Mico Harvey Corpuz Oseo</span>
+      </a>
+      <div class="social-icons d-flex align-items-center">
+        <a href="https://www.facebook.com/micocorpuzoseo13/" target="_blank" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/xyz.micoharbi_?igsh=ODcwYmgxMHF0dWp5agram" target="_blank" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+        <a href="viber://chat?number=+639123456789" target="_blank" class="text-white me-2"><i class="fab fa-viber"></i></a>
+        <a href="https://t.me/xyzmicoharbi" class="text-white"><i class="fab fa-telegram-plane"></i></a>
+      </div>
+    </div>
+
+    <!-- Toggler -->
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- RIGHT: Nav Links -->
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-center">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Hello, I'm <span id="typed"></span></h1>
+    <p class="lead">
+      4th Year Computer Engineering Student | Full-stack Developer | Hardware & Software Enthusiast
+    </p>
+    <a href="#projects" class="btn btn-cyan mt-3">View My Work</a>
+  </div>
+
+  <div class="hero-image"></div>
+</section>
+
+<!-- About -->
+<section id="about" class="py-5">
+  <div class="container text-center">
+    <h2 class="text-cyan">About Me</h2>
+    <p>
+      I’m an incoming graduate in Computer Engineering with a passion for exploring both the hardware and software aspects of computers. 
+      I love building algorithms, developing systems, and understanding how software interacts with hardware. 
+      I am competitive, hardworking, and determined to use my knowledge to succeed in any challenge.
+    </p>
+    <p>
+      I have experience with basic programming in multiple languages, including:
+    </p>
+    <p class="fw-bold text-cyan">
+      Mico.RunBasicSkills({ Java, Python, Assembly, C++, C#, SQL, JavaScript, HTML, CSS, PHP });
+    </p>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="py-5 bg-dark text-white">
+  <div class="container">
+    <h2 class="text-cyan text-center">Projects</h2>
+
+    <!-- POS Systems -->
+    <div class="mt-5">
+      <h3 class="text-cyan">POS Systems</h3>
+      <div class="row mt-3">
+        <div class="col-md-6" data-aos="fade-up">
+          <div class="card project-card">
+            <div class="card-body">
+              <h5 class="card-title text-cyan">Pharmacy POS System</h5>
+              <p class="card-text">A point-of-sale system designed for pharmacies, managing inventory, transactions, and receipts efficiently.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="card project-card">
+            <div class="card-body">
+              <h5 class="card-title text-cyan">Fast Food POS System</h5>
+              <p class="card-text">A POS system tailored for fast-food businesses with order management, billing, and reporting features.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Software and Hardware Prototype Systems -->
+    <div class="mt-5">
+      <h3 class="text-cyan">Software & Hardware Prototype Systems</h3>
+      <div class="row mt-3">
+        <div class="col-md-4" data-aos="fade-up">
+          <div class="card project-card">
+            <div class="card-body">
+              <h5 class="card-title text-cyan">Automatic Pet Feeder</h5>
+              <p class="card-text">A prototype pet feeder with scheduling system and a website dashboard for remote management.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card project-card">
+            <div class="card-body">
+              <h5 class="card-title text-cyan">Smart Shopping Cart</h5>
+              <p class="card-text">A shopping cart that recognizes items, computes quantity, and calculates total cost automatically.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+          <div class="card project-card">
+            <div class="card-body">
+              <h5 class="card-title text-cyan">Automatic Water Dispenser</h5>
+              <p class="card-text">A water dispenser system using Arduino and ultrasonic sensors to detect water levels and automate dispensing.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Capstone 1 -->
+    <div class="mt-5">
+      <h3 class="text-cyan">Capstone 1</h3>
+      <div class="row mt-3">
+        <div class="col-md-12" data-aos="fade-up">
+          <div class="card project-card">
+            <div class="card-body">
+              <h5 class="card-title text-cyan">AquaPalay</h5>
+              <p class="card-text">
+                Chapters 1-3: Partial Prototype Hardware System.<br>
+                An IoT-enabled floating bed system with an AI-driven Decision Support System for automated irrigation, nutrient management, and real-time monitoring of RC216 Palay.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-5">
+  <div class="container text-center">
+    <h2 class="text-cyan">Contact Me</h2>
+   <p><i class="fas fa-envelope"></i> oseomico2004@gmail.com</p>
+    <p><i class="fas fa-phone"></i> +63 972 927 6618</p>
+    <div class="mt-3">
+      <a href="https://www.facebook.com/micocorpuzoseo13" target="_blank" class="text-cyan me-3"><i class="fab fa-facebook-f fa-2x"></i></a>
+     <a href="https://www.instagram.com/xyz.micoharbi_?igsh=ODcwYmgxMHF0dWp5agram" target="_blank" class="text-cyan me-3"><i class="fab fa-instagram fa-2x"></i></a>
+      <a href="viber://chat?number=+639123456789" target="_blank" class="text-cyan me-3"><i class="fab fa-viber fa-2x"></i></a>
+        <a href="https://t.me/xyzmicoharbi" target="_blank" class="text-cyan"><i class="fab fa-telegram-plane fa-2x"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-4 mt-5">
+  <div class="container text-center">
+    <p>&copy; 2026 Mico Harvey Corpuz Oseo. All Rights Reserved.</p>
+    <p>
+      <a href="#home" class="text-cyan text-decoration-none me-3">Home</a>
+      <a href="#about" class="text-cyan text-decoration-none me-3">About</a>
+      <a href="#projects" class="text-cyan text-decoration-none me-3">Projects</a>
+      <a href="#contact" class="text-cyan text-decoration-none">Contact</a>
+    </p>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
